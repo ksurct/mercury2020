@@ -5,6 +5,7 @@ sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)) + "/../../Test/Py
 from Visualizer import Visualizer
 sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)) + "/../../Test/")
 from ObstacleGenerator import ObstacleGenerator
+
 class SimRobotControl():
     def __init__(self, callback, rate, errorPercent):
         pyglet.clock.schedule_interval(callback, rate)
@@ -48,7 +49,7 @@ if (__name__ == "__main__"):
     def callback(test):
         print(test)
         r.move(10, 0);    
-        r.rotate(0, 0)
+        r.rotate(0.1, 0)
     r = SimRobotControl(callback, 0.1, 0.01)
 
     pyglet.app.run()

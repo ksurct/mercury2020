@@ -166,7 +166,6 @@ class ObstacleGenerator:
             self.pointobjects.append(Point((point[0]+1),(point[1]+1)))
 
 
-print(course.cornerarray)
 # for i in range(1000):
 #     course.generate()
 #     field = ObstacleField(72, 96, 24, 34, 24, 6, course.pointobjects)
