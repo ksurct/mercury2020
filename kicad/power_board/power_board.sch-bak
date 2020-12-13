@@ -464,8 +464,6 @@ Text GLabel 1900 1600 0    50   Input ~ 0
 A5
 Text GLabel 7600 950  1    50   Input ~ 0
 ARDUINO_5V
-Text GLabel 2250 3400 3    50   Input ~ 0
-ARDUINO_5V
 $Comp
 L power:GND #PWR01
 U 1 1 5FA4B153
@@ -1413,5 +1411,16 @@ F 2 "mercury:proto" H 7300 4800 50  0001 C CNN
 F 3 "" H 7300 4800 50  0001 C CNN
 	1    7300 4800
 	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FBB045E
+P 2250 3400
+F 0 "#PWR?" H 2250 3250 50  0001 C CNN
+F 1 "+5V" H 2265 3573 50  0000 C CNN
+F 2 "" H 2250 3400 50  0001 C CNN
+F 3 "" H 2250 3400 50  0001 C CNN
+	1    2250 3400
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
